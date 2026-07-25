@@ -12,7 +12,7 @@ st.subheader("Online Prediction")
 
 # Collect user input for property features
 store_id = st.selectbox("Store ID", ["OUT001", "OUT002", "OUT003", "OUT004"])
-product_id = st.number_input("Product ID", min_value=1, value=2)
+product_id = st.text_input("Product ID")
 product_mrp = st.number_input("Product MRP", min_value=1, step=1, value=2)
 product_type = st.selectbox("Product Type", ["Frozen Foods", "Dairy", "Canned","Baking Goods", "Health and Hygiene", "Snack Foods", "Meat", "Household", "Hard Drinks","Fruits and Vegetables", "Breads", "Soft Drinks", "Breakfast", "Others","Starchy Foods","Seafood"])
 
