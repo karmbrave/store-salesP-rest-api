@@ -32,7 +32,7 @@ if st.button("Predict", type="primary"):
         prediction = response.json()['Predicted Sales (in dollars)']
         st.success(f"Predicted Sales Price (in dollars): {prediction}")
     else:
-        st.error(f"Unable to connect to the prediction API.: {json}")
+        st.error(f"Unable to connect to the prediction API.: {input_data.to_dict(orient='records')[0]}")
 
 # Section for batch prediction
 st.subheader("Batch Prediction")
